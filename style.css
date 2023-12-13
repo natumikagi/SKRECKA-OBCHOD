@@ -2,6 +2,7 @@ body {
     background-color: #272727;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    justify-content: space-between;
     margin: 0;
     height: 100vh;
     flex-direction: column;
@@ -12,7 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 4px 32px;
-    background-color: rgb(170, 156, 233);
+    background-color: #aa9ce9;
     color: #000000;
 }
 
@@ -67,6 +68,20 @@ body {
   padding: 4px 8px; 
 }
 
+#enter {
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+#enter a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+}
+
 #popis,
 #popis2 {
   text-decoration: none;
@@ -84,4 +99,34 @@ body {
 #kupit2.disabled {
   background-color: #808080;
   border-color: #808080;
+}
+
+#splash {
+  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("./images/splash.jpg");
+  filter: brightness(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  height: 100vh;
+}
+
+#title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#desc {
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+#footer {
+  background-color: rgb(169, 155, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
 }
